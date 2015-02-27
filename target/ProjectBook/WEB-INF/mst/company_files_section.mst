@@ -1,0 +1,18 @@
+
+    {{#sections}}
+        <li class="infoSection" id="sectionElem_{{id}}">
+             <span class="sectionButtonGroup">
+                <a id="editSectionBtn_{{id}}" class="btnIcon btnEditSection">
+                    <img class="sectionImg" src="/css/images/Pencil-icon.png">
+                </a>
+                <a id="delSectionBtn_{{id}}" class="btnIcon btnDelSection">
+                    <img class="sectionImg" src="/css/images/Cross-icon.png">
+                </a>
+            </span>
+            <h2>{{name}}</h2>
+            <img class="sectionImg sectionFolder" src="/css/images/section_folder.png">
+        </li>
+    {{/sections}}
+
+
+

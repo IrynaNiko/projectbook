@@ -1,0 +1,20 @@
+
+        {{#announcements}}
+            <li class="ui-widget-content ui-selectee" id='annElem{{id}}'>
+                <h2 class="annTitle ui-selectee">{{name}}</h2>
+                <h5 class="annCreatedInfo ui-selectee">
+                    <span class="annCreated ui-selectee">{{dateCreation}}</span> by
+                    <span class="annOwner ui-selectee" id = 'annOwner{{user.id}}'>{{user.name}} {{user.surname}}</span>
+                    </h5>
+                <div>
+                    <span class="annDesc">{{description}}</span>
+                </div>
+
+                <a href="/pb/ajax/file/file_storage/{{file.id}}"
+                   class="annPicture ui-selectee" id = 'annFile{{file.id}}'>{{file.name}}</a>
+            </li>
+            <br class="ui-selectee">
+        {{/announcements}}
+
+
+

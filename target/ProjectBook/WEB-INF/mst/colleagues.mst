@@ -1,0 +1,43 @@
+<div>
+        <div class="accordion-group userElem" id="accordion" id="uElem_{{id}}">
+            {{#users}}
+                <div class="accordion-heading">
+
+                    <img class="userImg userIcon" src="/css/images/Misc-User-icon.png">
+                        <h3 class="userName">{{surname}} {{name}}</h3>
+
+                    <span class="userButtonGroup">
+                        <a id="editUserBtn_{{id}}" class="btnIcon btnEditUser">
+                            <img class="userImg" src="/css/images/Pencil-icon.png">
+                        </a>
+                        <a id="delUserBtn_{{id}}" class="btnIcon btnDelUser">
+                            <img class="userImg" src="/css/images/Cross-icon.png">
+                        </a>
+                    </span>
+                </div>
+
+                <div class="accordion-inner">
+                    <div class="accordion-field">
+                        Email:
+                        <span id="userEmail">
+                            <a href="mailto:{{email}}">{{email}}</a>
+                        </span>
+                    </div>
+                    <div class="accordion-field">
+                        Phone: <span id="userPhone"> {{phone}}</span>
+                    </div>
+                    <div class="accordion-field">
+                        Position: <span id="userPosition"> {{position}}</span>
+                    </div>
+                    <div class="accordion-field">
+                        Birth Date: <span id="birthDatePhone"> {{birthDate}}</span>
+                    </div>
+                    <div class="accordion-field">
+                        Address: <span id="userAddress"> {{address}}</span>
+                    </div>
+                </div>
+            {{/users}}
+        </div>
+</div>
+
+
